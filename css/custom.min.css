@@ -1,0 +1,773 @@
+@font-face {
+    font-family: "myriad-pro-regular";
+    src: url("../fonts/myriad-pro-regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "proximanova-semibold";
+    src: url("../fonts/proximanova-semibold.otf") format("truetype");
+}
+@font-face {
+    font-family: "agaramondpro-regular";
+    src: url("../fonts/agaramondpro-regular.otf") format("truetype");
+}
+@font-face {
+    font-family: "wickedgrit";
+    src: url("../fonts/wickedgrit.ttf") format("truetype");
+}
+@font-face {
+    font-family: "proxima-nova-font-regular";
+    src: url("../fonts/proxima-nova-font-regular.otf") format("truetype");
+}
+@font-face {
+    font-family: "proximanova-light";
+    src: url("../fonts/proximanova-light.otf") format("truetype");
+}
+/*@font-face {
+    font-family: 'Wicked Grit';
+    src: url('WickedGrit.woff2') format('woff2'),
+        url('WickedGrit.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}*/
+
+
+@charset "utf-8";
+/* CSS Document */
+body, html{
+	height: 100%;
+	overflow-x: hidden;
+
+}
+body{
+	background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, a{
+	font-family: "myriad-pro-regular";
+}
+p{
+	font-family: "proximanova-light";
+}
+h1, h2, h3, h4, h5, h6, p, a, ul, li{
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+a:hover{
+	text-decoration: none;
+}
+.img-center{
+	margin: 0 auto;
+}
+.navbar-default{
+	margin-bottom: 0;
+	background: none;
+	box-shadow: none;
+	border: 0;
+}
+.main-slider .item > img{
+	width: 100%;
+}
+
+
+
+
+
+/*Menu Box*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    transition: opacity 1s;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    background-color: #fff;
+}
+.list-group-item.active {
+    color: #fff;
+    background-color: #70bd55;
+    border-color: #70bd55;
+}
+.list-group-item.active:hover{
+    background-color: #70bd55;
+}
+
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2e3191;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/*Menu Box*/
+
+
+
+/*Main Page CSS Start*/
+/*Header CSS Start*/
+header {
+    position: relative;
+}
+.top-row {
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+}
+.nav-icn ul li {
+    padding: 1px 10px;
+}
+.nav-icn ul li a {
+    color: #2f3393;
+    font-size: 16px;
+}
+.top-row .row {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    text-align: center;
+}
+.logo img {
+    width: 56%;
+}
+.availability h5 {
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+}
+.col-md-8.available {
+    padding: 0;
+    margin: 0;
+}
+.availability a {
+    font-size: 18px;
+    color: #000;
+    display: inline-block;
+    font-weight: 600;
+}
+.friendship {
+    text-align: center;
+}
+.friendship a {
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #70bd55;
+    color: #fff;
+    padding: 11px 10px;
+    border-radius: 6px;
+    font-family: "agaramondpro-regular";
+    border: 1px solid #70bd55;
+}
+.friendship a:hover {
+    background-color: transparent;
+    color: #70bd55;
+}
+.main-slider {
+    position: relative;
+}
+.carosal-cap {
+    position: absolute;
+    top: 228px;
+    left: 90px;
+}
+.carosal-cap a {
+    color: #fff;
+    background-color: #70bd55;
+    text-transform: uppercase;
+    padding: 13px 40px;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 9px;
+    margin-top: 20px;
+    border: 2px solid #70bd55;
+}
+.carosal-cap a:hover {
+    background-color: transparent;
+    color: #70bd55;
+}
+.carosal-cap h5 {
+    font-size: 45px;
+    background-color: #70bd55;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 1px 90px 0 10px;
+    font-family: "proximanova-semibold";
+}
+.carosal-cap h3 {
+    color: #3f48af;
+    font-size: 116px;
+    margin: 0;
+    font-weight: 600;
+    font-family: "wickedgrit";
+}
+.carosal-cap h4 {
+    font-size: 90px;
+    color: #454343;
+    font-family: "proximanova-semibold";
+    font-weight: 600;
+}
+.carosal-cap p {
+    font-size: 26px;
+    width: 58%;
+    color: #4d6c76;
+}
+/*Header CSS End*/
+
+
+
+
+/*Tabs CSS Start*/
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #70bd55;
+    background-color: #70bd55;
+    color: #fff;
+    position: relative;
+    padding: 29px 0px;
+    top: 150px;
+    border-radius: 6px;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 23px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #70bd55;
+}
+
+
+.tab button.active {
+    background-color: #70bd55;
+}
+
+
+.tabcontent {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 382px;
+    background-color: #fff;
+    width: 158px;
+    border-radius: 11px;
+}
+.tab-imgg {
+    text-align: center;
+    padding: 13px 0px;
+    box-shadow: 0px 0px 3px 2px #e6e6e6;
+    border-radius: 10px;
+}
+.tab button i {
+    display: block;
+}
+.tab-imgg h4 {
+    color: #234c5a;
+    font-size: 21px;
+}
+
+
+section.lorem-tab {
+    position: relative;
+    padding: 281px 0px;
+    background: url(../images/who-we-back.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.lorem-tab::before {
+    content: '';
+    background: url(../images/tab-main.png);
+    position: absolute;
+    top: -34px;
+    height: 514px;
+    background-repeat: no-repeat;
+    z-index: 999;
+    width: 358px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+/*Tabs CSS End*/
+
+
+/*Who We CSS Start*/
+.who-slider img {
+    width: 100%;
+}
+section.who-we {
+    background: url(../images/who-we-back.png);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    padding: 90px 0px;
+    color: #fff;
+}
+.who-we-txt h4 {
+    font-size: 64px;
+    text-transform: uppercase;
+    padding-bottom: 28px;
+    font-family: "wickedgrit";
+}
+.who-we-txt p {
+    font-size: 21px;
+    width: 82%;
+    padding-bottom: 48px;
+}
+.who-list ul {
+    padding: 0;
+}
+.who-list ul li {
+    list-style: none;
+    font-size: 22px;
+    line-height: 40px;
+}
+.who-list ul li img {
+    width: auto;
+}
+.who-slider .slick-initialized .slick-slide {
+    display: block;
+    outline: none;
+}
+.slick-initialized .slick-slide {
+    display: block;
+    outline: none;
+}
+.who-slider .slick-next {
+    right: 172px;
+    top: auto;
+    bottom: -31px;
+}
+.who-slider .slick-next:before {
+    content: '\f105';
+    font-family: 'FontAwesome';
+    font-size: 23px;
+    color: #70bd55;
+}
+.who-slider .slick-prev {
+    left: 171px;
+    top: auto;
+    bottom: -35px;
+}
+.who-slider .slick-prev:before {
+    content: '\f104';
+    font-family: 'FontAwesome';
+    color: #6ebb57;
+}
+.who-slider .slick-dots li button:before {
+    opacity: .75;
+    color: #fff;
+    font-size: 26px;
+}
+.who-slider .slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #6fbc56;
+}
+/*Who We CSS End*/
+
+
+/*What We Do CSS Start*/
+.what-img img {
+    width: 100%;
+}
+section.what-we {
+    background: url(../images/who-we-back.png);
+    padding: 61px 0px;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    position: relative;
+}	
+section.what-we::before {
+    content: '';
+    position: absolute;
+    background: url(../images/before-img.png);
+    width: 100%;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block;
+    top: 0;
+}
+section.what-we::after {
+    content: '';
+    background: url(../images/before-img.png);
+    width: 100%;
+    height: 16px;
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 0;
+    background-position: center center;
+}
+.what-txt h4 {
+    font-size: 115px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "wickedgrit";
+}
+.what-txt p {
+    font-size: 23px;
+    width: 89%;
+    padding-top: 30px;
+}
+.what-txt a {
+    color: #fff;
+    background-color: #70bd55;
+    padding: 11px 40px;
+    display: inline-block;
+    font-size: 23px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    margin-top: 30px;
+    border: 2px solid #70bd55;
+}
+.what-txt a:hover {
+    background: transparent;
+    color: #70bd55;
+}
+/*What We Do CSS End*/
+
+
+/*Gallery CSS Start*/
+.gallery-img img {
+    width: 100%;
+    transition: all 0.5s;
+}
+.gallery-img img:hover {
+    transform: scale(1.3);
+}
+.gallery-img {
+    overflow: hidden;
+    margin-top: 40px;
+}
+section.gallery {
+    background: url(../images/who-we-back.png);
+    background-size: cover;
+    background-position: center center;
+    padding: 70px 0px;
+    color: #fff;
+    position: relative;
+}
+.gallery-head {
+    text-align: center;
+}
+.gallery-head h4 {
+    font-size: 81px;
+    text-transform: uppercase;
+    width: 63%;
+    display: inline-block;
+    font-weight: 600;
+    font-family: "wickedgrit";
+}
+.gallery-head p {
+    font-size: 22px;
+    width: 71%;
+    display: inline-block;
+}
+.gallery-img.fst-img a i {
+    position: absolute;
+    top: 76px;
+    left: 87px;
+    font-size: 128px;
+    color: #fff;
+}
+.fst-img {
+    position: relative;
+}
+.gallery-btn a {
+    color: #fff;
+    background-color: #70bd55;
+    display: inline-block;
+    padding: 14px 70px;
+    font-size: 23px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin-top: 50px;
+    border: 2px solid #70bd55;
+}
+.gallery-btn a:hover {
+    background: transparent;
+    color: #70bd55;
+}
+
+
+.gallery-btn {
+    text-align: center;
+}
+/*Gallery CSS End*/
+
+
+
+/*Lorem Ipsum CSS Start*/
+section.lorem-ipsum {
+    background: url(../images/lorem-ipsum-img.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    padding: 135px 0px 330px 0px;
+    text-align: center;
+    position: relative;
+}
+section.lorem-ipsum h4 {
+    font-size: 41px;
+    color: #4049ae;
+    font-weight: 600;
+    font-family: "wickedgrit";
+}
+section.lorem-ipsum h3 {
+    font-size: 72px;
+    color: #4049ae;
+    font-weight: 600;
+    font-family: "wickedgrit";
+}
+section.lorem-ipsum p {
+    font-size: 21px;
+    color: #375965;
+    width: 90%;
+    display: inline-block;
+    padding-top: 20px;
+}
+section.lorem-ipsum img {
+    padding-top: 70px;
+    width: auto;
+}
+section.lorem-ipsum h5 {
+    color: #355864;
+    font-size: 29px;
+    width: 63%;
+    display: inline-block;
+    padding-top: 30px;
+}
+/*Lorem Ipsum CSS End*/
+
+
+
+/*Dont Just Take CSS Start*/
+section.dont-just {
+    background: url(../images/who-we-back.png);
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+    padding-bottom: 70px;
+    background-position: center center;
+    position: relative;
+}
+.dont-blk {
+    background-color: #fff;
+    padding: 51px 0px;
+}
+.dont-blk ul {
+    padding-top: 35px;
+}
+.dont-blk h5 {
+    color: #234c5a;
+    font-size: 29px;
+    font-weight: 600;
+    padding-top: 28px;
+}
+.dont-blk ul li {
+    padding: 0;
+    color: #e7b41a;
+}
+.dont-blk img {
+    width: 25%;
+    display: inline-block;
+}
+.dont-blk p {
+    font-size: 17px;
+    color: #777777;
+    width: 84%;
+    display: inline-block;
+    padding-top: 43px;
+}
+.dont-head {
+    color: #fff;
+    padding-bottom: 60px;
+    padding-top: 20px;
+}
+.dont-head h3 {
+    font-size: 46px;
+    font-weight: 600;
+    font-family: "wickedgrit";
+}
+.dont-head h4 {
+    font-size: 72px;
+    font-weight: 600;
+    padding-top: 20px;
+    font-family: "wickedgrit";
+}
+.dont-blk::before {
+    content: '';
+    background: url(../images/clip-img.png);
+    width: 80px;
+    height: 29px;
+    left: -422px;
+    position: absolute;
+    top: 28px;
+}
+.dont-blk::after {
+    content: '';
+    background: url(../images/clip-img.png);
+    position: absolute;
+    bottom: 14px;
+    left: -43px;
+    width: 80px;
+    height: 29px;
+}
+.dont-slider .slick-dots li button:before {
+    opacity: .75;
+    color: #fff;
+    font-size: 34px;
+}
+.dont-slider .slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #6bb94f;
+}
+.dont-slider .slick-prev {
+    left: 455px;
+    top: auto;
+    bottom: -65px;
+}
+.dont-slider .slick-next {
+    right: 470px;
+    top: auto;
+    bottom: -65px;
+    left: auto;
+}
+.dont-slider .slick-dots {
+    position: absolute;
+    bottom: -55px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.dont-slider .slick-prev:before {
+    content: '\f104';
+    font-family: 'FontAwesome';
+    color: #6bb94f;
+}
+.dont-slider .slick-next:before {
+    content: '\f105';
+    font-family: 'FontAwesome';
+    color: #70bd55;
+}
+/*Dont Just Take CSS End*/
+
+/*Discover New CSS Start*/
+.discover-txt h4 {
+    font-size: 41px;
+    text-transform: uppercase;
+    font-family: "wickedgrit";
+}
+.discover-btn a {
+    background-color: #4049ae;
+    color: #fff;
+    font-size: 26px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 11px;
+    border: 2px solid #4049ae;
+}
+.discover-btn a:hover {
+    background: transparent;
+    color: #4049ae;
+}
+section.discover-new .row {
+    display: flex;
+    align-items: center;
+}
+section.discover-new {
+    background: url(../images/discover-new-back.png);
+    color: #fff;
+    padding: 31px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+/*Discver New CSS End*/
+
+/*Footer CSS Start*/
+footer {
+    text-align: center;
+    color: #fff;
+    background: url(../images/who-we-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 60px 0px 0px 0px;
+    position: relative;
+}
+.ftr-txt p {
+    font-size: 24px;
+    width: 85%;
+    display: inline-block;
+    padding-top: 30px;
+}
+.copyright {
+    background: url(../images/copyright-back.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    background-repeat: no-repeat;
+    padding: 12px 0px;
+}
+.copyright p {
+    font-size: 19px;
+}
+/*Footer CSS End*/
+/*Main Page CSS End*/
+
+
+
+
+
+@media only screen and (min-device-width:520px) and (max-device-width:767px) and (orientation:portrait) {}
+@media only screen and (min-device-width:120px) and (max-device-width:750px) and (orientation:landscape) {}
+@media only screen and (min-device-width:751px) and (max-device-width:999px) and (orientation:portrait) {}
+@media only screen and (min-device-width:751px) and (max-device-width:999px) and (orientation:landscape) {}
+@media only screen and (min-device-width:1000px) and (max-device-width:1030px) and (orientation:portrait) {}
+@media only screen and (min-device-width:1000px) and (max-device-width:1030px) and (orientation:landscape) {}
+
+@media only screen and (min-width: 1366px) and (max-width: 1920px){}
+@media only screen and (min-width: 1200px) and (max-width: 1365px){}
+@media only screen and (min-width: 992px) and (max-width: 1199px){}
+@media only screen and (min-width: 768px) and (max-width: 991px){}
+@media only screen and (min-width: 520px) and (max-width: 767px){}
+@media only screen and (min-width: 300px) and (max-width: 519px){}
+
+
+
+
+
+
+
+
